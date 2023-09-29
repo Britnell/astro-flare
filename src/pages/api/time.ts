@@ -4,7 +4,7 @@ export const GET: APIRoute = async ({ request, params }) => {
   return new Response(
     JSON.stringify({
       hello: "world",
-      t: new Date(),
+      t: new Date().toISOString(),
     }),
     {
       status: 200,
