@@ -10,6 +10,7 @@ export const GET: APIRoute = async ({ request, params }) => {
       status: 200,
       headers: {
         "Cache-Control": "public max-age=10; ",
+        "Content-Type": "application/json",
       },
     }
   );
